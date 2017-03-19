@@ -1,0 +1,262 @@
+@charset "utf-8";
+/*site-nav*/
+.site-nav{
+  height: 30px;
+  line-height:30px;
+  background-color:#f1f1f1;
+  border-bottom:1px solid #ccc;
+  .site-nav-l{
+    position:relative;
+    .site-nav-send{
+      height: 28px;
+      padding:1px 25px 1px 10px;
+      position:relative;
+      z-index:1;
+    }
+    &:hover{
+      .site-nav-down{
+        display:block;
+      }
+      .site-nav-send{
+          cursor:pointer;
+          background-color:#fff;
+          border:1px solid #ccc;
+          padding:0 24px 2px 9px;
+          border-bottom:none;
+          i{
+            s{
+              top:1px;
+            }
+          }
+      }
+    }
+  }
+  .site-nav-city{
+    display: block;
+    height: 30px;
+    color:#666;
+  }
+  .site-nav-down{
+    display:none;
+    width: 300px;
+    height: 200px;
+    position:absolute;
+    left:0;
+    top:30px;
+    border:1px solid #ccc;
+    background-color:#fff;
+  }
+  i{
+    position:absolute;
+    top:12px;
+    right:4px;
+    width: 12px;
+    height:6px;
+    overflow:hidden;
+  }
+  s{
+    position:absolute;
+    top:-6px;
+    font:400 12px/12px "consoals";
+  }
+  .site-nav-r{
+    ul{
+      li{
+        float:left;
+        padding:0 10px;
+        position:relative;
+        .nav-reg{
+          color:#c81623;
+        }
+        &.nav-line{
+          width: 1px;
+          height: 12px;
+          padding:0;
+          background-color:#666666;
+          margin-top:9px;
+        }
+        &.nav-icon-down{
+          padding-right:20px;
+        }
+        &.nav-jd-icon{
+          padding-left:25px;
+          span{
+            position:absolute;
+            top:5px;
+            left:5px;
+            width: 16px;
+            height: 20px;
+            background-image:url('../images/tel.png');
+          }
+        }
+      }
+    }
+  }
+}
+/*top-banner*/
+.top-banner{
+  background-color:#34BF32;
+}
+/*search*/
+.search{
+  margin-top:210px;
+  .search-logo{
+    width: 360px;
+    height: 60px;
+    padding:20px 0;
+    a{
+      text-indent: -9999px;
+      display:block;
+      width: 270px;
+      height: 60px;
+      background:url('../images/logo.png') no-repeat;
+    }
+  }
+  .search-input{
+    width: 540px;
+    height: 80px;
+    padding-top:20px;
+    input{
+      float:left;
+      width: 442px;
+      height: 32px;
+      border:2px solid #c81623;
+      border-right:none;
+      padding-left:6px;
+    }
+    button{
+      float:left;
+      width: 90px;
+      height: 36px;
+      background-color:#c81623;
+    }
+  }
+  .search-cart{
+    width: 158px;
+    height: 36px;
+    border:1px solid #ccc;
+    margin:20px 20px 0 0;
+    .search-cart-btn{
+      padding-left:45px;
+      line-height:36px;
+      position:relative;
+      a{
+        color:#c81623;
+      }
+      .search-icon-cart{
+        position:absolute;
+        top:8px;
+        left:16px;
+        width: 20px;
+        height: 20px;
+        background:url('../images/tel.png') no-repeat 0 -57px;
+      }
+      .search-icon-crow{
+        position:absolute;
+        top:0;
+        right:14px;
+        font:400 14px/36px "simsun";
+      }
+      .search-icon-count{
+        position:absolute;
+        top:-10px;
+        right:34px;
+        width: 16px;
+        height: 16px;
+        background-color:#c81623;
+        color:#fff;
+        text-align:center;
+        line-height:16px;
+        border-radius:8px 8px 8px 0;
+      }
+    }
+  }
+}
+/*shortcut-menu*/
+.shortcut-menu{
+  height: 44px;
+  border-bottom:2px solid #B1191A;
+  .shortcut-category{
+    height: 44px;
+    .shortcut-category-all{
+      width: 210px;
+      height: 44px;
+      a{
+        display:block;
+        width: 190px;
+        height: 44px;
+        padding:0 10px;
+        font:400 16px/44px "micosoft yahei";
+        background-color:#B1191A;
+        color:#fff;
+      }
+    }
+    .shortcut-category-one{
+      height: 465px;
+      margin-top:2px;
+      border-left:1px solid #B1191A;
+      border-bottom:1px solid #B1191A;
+      div{
+        height: 31px;
+        line-height:31px;
+        font-size:14px;
+        font-weight:400;
+        background-color:#c81623;
+        padding:0 10px;
+        &:hover{
+          background-color:#fff;
+          a,span{
+            color:#c81623;
+          }
+        }
+        h3{
+          float:left;
+          a{
+            color:#fff;
+          }
+        }
+        span{
+          float:right;
+          font:400 14px/31px "simsun";
+          color:#fff;
+        }
+      }
+    }
+  }
+  .shortcut-items{
+    ul{
+      li{
+        float:left;
+        a{
+          display:block;
+          height: 44px;
+          padding:0 20px;
+          font:700 16px/44px "micosoft yahei";
+          color:#333;
+        }
+      }
+    }
+  }
+}
+/*slider*/
+.slider{
+  .slider-pic{
+    width: 730px;
+    height: 454px;
+    margin-top:12px;
+    margin-left:220px;
+    ul{
+      width: 100%;
+      height: 100%;
+      overflow:hidden;
+      li{
+        float:left;
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+  .slider-news{
+
+  }
+}

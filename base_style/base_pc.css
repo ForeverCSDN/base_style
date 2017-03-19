@@ -1,0 +1,61 @@
+@charset "utf-8";
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-size:12px;
+    font-family:"microsoft yahei";
+    background:#fff;
+    color:#666;
+}
+h1,h2,h3,h4,h5,h6{
+    text-decoration:none;
+    font-weight:normal;
+    font-size:100%;
+}
+ul li{
+    list-style:none;
+}
+a{
+    text-decoration:none;
+    color:#666;
+}
+a:hover{
+    color:#c81623;
+    cursor:pointer;
+}
+s,i{
+    text-decoration:none;
+}
+img{
+    /*去除3像素*/
+    vertical-align:middle;
+}
+input,button{
+    border:none;
+    outline-style:none;
+}
+/*清除浮动*/
+.clearfix::before,
+.clearfix::after{
+    content:"";
+    display:block;
+    height: 0;
+    line-height: 0;
+    visibility: hidden;
+    clear:both;
+}
+/*公共类*/
+
+/*版心*/
+.w{
+    width:1210px;
+    margin:0 auto;
+}
+.fl{
+    float:left;
+}
+.fr{
+    float:right;
+}
